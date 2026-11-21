@@ -324,10 +324,11 @@ img {
 .strip-track {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 0;
   white-space: nowrap;
   width: max-content;
-  animation: slide 33s linear infinite;
+  animation: slide 48s linear infinite;
+  will-change: transform;
 }
 .strip span {
   font: 500 20px var(--display);
@@ -340,8 +341,10 @@ img {
 }
 .strip-track > div {
   display: flex;
+  flex: none;
   gap: 30px;
   align-items: center;
+  padding-right: 30px;
 }
 @keyframes slide {
   to {
