@@ -1415,3 +1415,18 @@ button:focus-visible {
     grid-auto-rows: minmax(260px, auto);
   }
 }
+
+
+/* Keep the hero's right-hand brand label inside its grid cell on laptop widths. */
+@media (min-width: 791px) and (max-width: 1320px) {
+  .hero-layout { grid-template-columns: minmax(0, 1fr) minmax(160px, 0.27fr); gap: 24px; }
+  .hero-copy, .hero-number { min-width: 0; }
+  .hero-number { max-width: 100%; }
+  .hero-number strong { font-size: clamp(34px, 4.1vw, 55px); letter-spacing: -0.04em; }
+  .hero-number small { font-size: 8px; letter-spacing: 0.12em; }
+  .hero-copy h1 { font-size: clamp(70px, 8.5vw, 125px); }
+}
+@media (min-width: 791px) and (max-width: 960px) {
+  .hero-number strong { font-size: 34px; }
+  .hero-copy h1 { font-size: clamp(68px, 8vw, 82px); }
+}
