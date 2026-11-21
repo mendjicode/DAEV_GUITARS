@@ -60,7 +60,7 @@ $works = new WP_Query( array(
 	<div class="strip" aria-hidden="true">
 		<div class="strip-track">
 			<?php for ( $repeat = 0; $repeat < 2; ++$repeat ) : ?>
-				<div><span>REPAIR &amp; RESTORATION</span><i>✳</i><span>CUSTOM GUITARS</span><i>✳</i><span>LUTHIER WORKSHOP</span><i>✳</i><span>THE ART OF SOUND</span><i>✳</i></div>
+				<div><span>REPAIR &amp; RESTORATION</span><i>✳</i><span>CUSTOM GUITARS</span><i>✳</i><span>LUTHIER WORKSHOP</span><i>✳</i><span>THE ART OF SOUND</span><i>✳</i><span>REPAIR &amp; RESTORATION</span><i>✳</i><span>CUSTOM GUITARS</span><i>✳</i><span>LUTHIER WORKSHOP</span><i>✳</i><span>THE ART OF SOUND</span><i>✳</i><span>REPAIR &amp; RESTORATION</span><i>✳</i><span>CUSTOM GUITARS</span><i>✳</i><span>LUTHIER WORKSHOP</span><i>✳</i><span>THE ART OF SOUND</span><i>✳</i></div>
 			<?php endfor; ?>
 		</div>
 	</div>
