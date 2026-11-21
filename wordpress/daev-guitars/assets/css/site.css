@@ -1437,3 +1437,16 @@ button:focus-visible {
 .hero-copy h1 span{line-height:inherit}
 @media(max-width:790px){.hero-copy h1{font-size:clamp(52px,10.8vw,83px);line-height:1.14;letter-spacing:-.02em;margin:26px 0 26px}}
 @media(max-width:420px){.hero-copy h1{font-size:clamp(46px,10.2vw,58px);line-height:1.16;letter-spacing:-.015em}}
+
+
+/* Robust hero layout: prevent clipped headlines and right-side wordmark. */
+.hero-layout{grid-template-columns:minmax(0,1fr) minmax(190px,240px);column-gap:clamp(24px,3vw,56px);box-sizing:border-box}
+.hero-copy{min-width:0;max-width:100%}
+.hero-copy h1{font-size:clamp(50px,5vw,94px);line-height:1.19;letter-spacing:-.014em;max-width:100%;margin:24px 0 28px;overflow-wrap:normal}
+.hero-copy h1 span{line-height:inherit}
+.hero-number{min-width:0;max-width:100%;justify-self:stretch;padding-right:12px;box-sizing:border-box}
+.hero-number strong{font-size:clamp(29px,2.55vw,46px);line-height:1.08;letter-spacing:-.015em;max-width:100%;white-space:nowrap}
+.hero-number small{font-size:8px;letter-spacing:.08em;white-space:normal}
+@media(max-width:1100px) and (min-width:791px){.hero-layout{grid-template-columns:minmax(0,1fr) 190px;column-gap:20px}.hero-copy h1{font-size:clamp(46px,5.3vw,64px)}.hero-number strong{font-size:31px}}
+@media(max-width:790px){.hero-layout{display:block}.hero-copy h1{font-size:clamp(42px,9vw,72px);line-height:1.2;letter-spacing:-.012em}.hero-number{display:none}}
+@media(max-width:420px){.hero-copy h1{font-size:clamp(36px,8.5vw,45px);line-height:1.22}}
